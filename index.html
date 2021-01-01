@@ -1,0 +1,149 @@
+---
+layout: default
+---    
+
+<!-- hero section -->
+    <section class="hero">
+        <h2 class="hero-title-secondary">Hello I'm Zack.</h2>
+        <h1 class="hero-title-primary">I help startups build successful website.</h1>
+        <p class="hero-paragraph">I’m a self taught web designer and web
+ developer.</p>
+       
+       <div class="btn-wraper">
+        <button class="hero-btn-contact-me btn">Copy email</button>
+        <button class="hero-btn-work btn">See work</button>
+        </div>
+        <i class="fas fa-angle-double-down fa-2x arrow-down" style="color: white"></i>
+    </section> 
+<!-- End hero section -->
+
+<!-- Services section -->
+    <section id="services" class="services">          
+    <h1 class="services-title">Services:</h1> 
+        
+    <div class="services-wraper  container">  
+       
+        <div class="service-card">
+            <i class="fas fa-pen-fancy fa-2x" style="color: white;"></i>
+            <h1 class="service-card-title">Web design :</h1>
+            <p class="service-card-paragraph">I design the user interface of your website or app using design tools like Figma</p>
+        </div>
+           
+        <div class="service-card">
+        <i class="fas fa-code fa-2x" style="color: white;"></i>
+        <h1 class="service-card-title">Web developement: </h1>
+        <p class="service-card-paragraph">I develop the user interface of your website using web technologies : HTML/CSS/JAVASCRIPT</p>
+        </div>  
+        <div class="service-card">
+            <i class="fas fa-terminal fa-2x" style="color: white;"></i>
+           <h1 class="service-card-title">Web deployment :</h1>
+            <p class="service-card-paragraph">I deploy your website on the best hosting services, without the hustle of doing it yourself</p>
+        </div>
+        </div> 
+    </section>
+<!-- End Services section -->
+    
+    
+<!-- Methodology section -->
+    <section class="methodology">
+      
+       <div class="methodology-title-wraper">
+       <h1 class="methodology-title">Methodology:</h1>
+       <h2 class="methodology-sub-title">Building a website is not just writing bunch of codes, it’s a process!</h2>
+       </div>
+       <div class="methodology-card-wraper container">
+        <img src="pics/arrow1.svg" alt="" class="arrow1">
+       <img src="pics/arrow2.svg" alt="" class="arrow2">
+       <div class="methodology-card">
+           <h1 class="methodology-card-title">Goal identification:</h1>
+           <p class="methodology-card-paragraph"> I help you identify the purpose of your website by reflecting on the why, what and for whome.</p>
+       </div>
+          
+        <div class="methodology-card">
+           <h1 class="methodology-card-title">Design system:</h1>
+           <p class="methodology-card-paragraph"> Defining the identity of your website by choosing the right colors, typography and site funnel.</p>
+       </div>
+          
+        <div class="methodology-card">
+           <h1 class="methodology-card-title">development flow:</h1>
+           <p class="methodology-card-paragraph"> Using web technologies to make your website user friendly and suits your target screens.</p>
+       </div>
+       </div>
+    </section>
+<!-- End Methodology section -->
+    
+<!-- Projects section -->
+        
+    <section id="projects" class="projects">  
+        
+    <h1 class="projects-title">Projects:</h1>
+    
+    <div class="projects-wraper">
+    <div class="project-card">
+        <img src="pics/ultramarket-screen.PNG" alt="" class="ultramarket-project-img">
+        <div class="project-card-title">
+        <h2 class="ultramarket-project-title">Ultramarket</h2>
+        <p class="ultramarket-project-paragraph">Landing page</p>
+        </div>
+    </div>
+       
+    <div class="project-card">
+    <img src="pics/futura-screen.PNG" alt="" class="Futura-project-img">
+    <div class="project-card-title">
+        <h2 class="Futura-project-title">Ultramarket</h2>
+        <p class="Futura-project-paragraph">Landing page</p>
+    </div>
+    </div>   
+       
+    <div class="project-card">
+        <img src="pics/cardapp-screen.PNG" alt="" class="Cardapp-project-img">
+        <div class="project-card-title">
+        <h2 class="Cardapp-project-title">Ultramarket</h2>
+        <p class="Cardapp-project-paragraph">Web application</p>
+        </div>
+    </div>
+    
+    </div>
+    </section>  
+    
+<!-- End Projects section -->
+
+    
+<!-- Blog section -->
+        
+    <section class="blog-section">
+    <h1 class="blog-section-title">Read the latest blogpost</h1>
+    <ul class="post-list">
+      {%- for post in site.posts limit:1 -%}
+      <li>
+       
+        <img src="{{post.img}}" alt="" class="post-img">
+        <div class="post-title-wrapper">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <p style="color:#828282">{{ post.content | strip_html | truncatewords: 15 }}</p>
+        <a class="post-read-more" href="{{ post.url | relative_url }}" >read more →</a>
+        </div>
+            {%- if site.show_excerpts -%}
+                {{ post.excerpt }} 
+            {%- endif -%}
+           
+      </li>
+      {%- endfor -%}
+    </ul>
+        <!--<h1 class="blog-section-title">Recent Blog</h1>   
+        <div class="blogpost container">
+           
+        <div class="blogpost-title-wraper">
+            <h1 class="blogpost-title">How to learn faster read more...</h1>
+        </div>    
+        </div>-->  
+    </section>
+    
+<!-- End Blog section -->
+    
