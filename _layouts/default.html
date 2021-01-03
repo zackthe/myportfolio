@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Belkasmi zakariae</title>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,7 +22,7 @@
        <nav class="navigation-menu">
            <ul class="navigation-menu-list">
                <li><a href="/index.html">home</a></li>
-               <li><a href="/about.html">About</a></li>
+               <li><a href="/about/index.html">About</a></li>
                <li><a href="/#services">Services</a></li>
                <li><a href="/blog/index.html">Blog</a></li>
            </ul>
@@ -36,15 +36,32 @@
     <footer class="footer">
       <div class="footer-title-wraper">
        <h1 class="footer-title">You got a project ? let's talk</h1>
-       <button class="footer-btn btn">Copy email</button>
+       <div class="alert-msg-container">
+           <p class="alert-msg">email copied <i class="far fa-smile-beam" style="color: white"></i></p>
        </div>
-       <nav class="footer-navigation container">
+       <button class="footer-btn btn" onclick="function copyToClipboard()">Copy email</button>
+      
+       </div>
+       <div class="footer-navigation-wraper">
+       <div class="footer-logo">
+           zack
+       </div>
+       <nav class="footer-navigation">
            <ul>
-               <li><a href="#"></a>About</li>
-               <li><a href="#"></a>Contact me</li>
-               <li><a href="#"></a>Blog</li>
+               <li><a href="/#services">Services</a></li>
+               <li><a href="/about.html">About</a></li>
+               <li><a href="/blog/index.html">Blog</a></li>
            </ul>
        </nav>
+       <div class="footer-social-links">
+          <h2>follow me on :</h2>
+          <div class="social-links">
+             <a href="#"><i class="fab fa-instagram fa-2x" style="color: white"></i></a>
+             <a href="#"><i class="fab fa-twitter fa-2x" style="color: white"></i></a>
+             <a href="#"><i class="fab fa-github fa-2x" style="color: white"></i></a>
+          </div>
+       </div>
+       </div>
     </footer>
   <!--End Footer section -->
         

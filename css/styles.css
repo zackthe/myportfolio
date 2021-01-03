@@ -10,9 +10,7 @@
     --clr-rose : #EC152E;
     --clr-rose2 : #e42b4c;
     --clr-blue : #0066FF;
-   /* --clr-dark-gray:#18191a;*/
     --clr-dark-gray:#22222a;
-    /*--clr-dark-gray2 :#242526;*/
     --clr-dark-gray2 :#191a21;
     --clr-dark-blue : #222831;
     
@@ -34,6 +32,16 @@ body{
     background-color: var(--clr-dark-gray)
 
 }
+
+.alert-msg{
+    display: none;
+}
+
+.alert-msg-show{
+    display: block;
+}
+
+
 
 
 
@@ -334,12 +342,16 @@ button:hover{
 
     display: flex;
     flex-direction: column;
-    grid-gap: 3em;
     background-color: var(--clr-primary);
     padding: 5em 1.2em;
     padding-bottom: 3em;
     justify-content: flex-start;
 }
+
+.hero > *{
+    margin: 30px 0 0 0px;
+}
+
 
 .hero-title-primary{
     font-size: calc(3rem + 0.6vw);
@@ -365,6 +377,10 @@ button:hover{
     font-size: calc(1.5rem + 1vw);
     color: white;
     padding: 0.6em 0.8em;
+}
+
+.arrow-down{
+    margin-top: 1.5em
 }
 
 .arrow-down{
@@ -435,8 +451,13 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    grid-gap: 2em;
 }
+
+.services > *{
+    margin-bottom: 20px;
+}
+
+
 
 .services-title{
     text-align: center;
@@ -492,9 +513,13 @@ button:hover{
     background-color: var(--clr-dark-gray);
     display: flex;
     flex-direction: column;
-    grid-gap: 2em;
-    padding: 4em 0em;
+    padding: 4em 0 2em 0;
 }
+
+.methodology > *{
+    margin-bottom: 30px;
+}
+
 
 .methodology-title-wraper{
     display: flex;
@@ -600,7 +625,11 @@ button:hover{
     background-color: var(--clr-dark-gray);
     grid-gap: 3em;
     align-items: center;
-    padding: 3em 1em;
+    padding: 3em 1em 1em 1em;
+}
+
+.projects >* {
+    margin-bottom: 20px;
 }
 
 .projects-title{
@@ -623,7 +652,7 @@ button:hover{
 }
 
 .project-card:hover{
-    transform: scale(1.1)
+    transform: scale(1.05)
 }
 
 .project-card-title{
@@ -654,7 +683,10 @@ button:hover{
     padding: 1em;
     display: flex;
     flex-direction: column;
-    grid-gap: 2em;
+}
+
+.blogpost > *{
+ margin-bottom: 30px;  
 }
 
 .blogpost-title-wraper{
@@ -709,18 +741,24 @@ button:hover{
     background-color: var(--clr-primary);
      display: flex;
     flex-direction: column;
-    grid-gap :1em;
     padding: 2em;
     width: 100%;
+    bottom:0;
+    left:0;
 }
+
+.footer > *{
+    margin: 30px 0 0 0px;}
 
 .footer-title-wraper{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    grid-gap: 1em;
 }
+
+.footer-title-wraper > *{
+    margin: 30px 0 0 0px;}
 
 .footer-btn{
     background-color: var(--clr-rose2);
@@ -733,13 +771,28 @@ button:hover{
 }
 
 .footer-navigation>ul>li{
-    font-size: calc(1rem + 0.2vw);
+    font-size: calc(1.5rem + 0.2vw);
 }
 
 .footer-title{
     font-size: calc(2rem + 1vw);
 }
 
+.footer-navigation-wraper{
+    display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        justify-items: center;
+        grid-gap: 2em 
+}
+
+.footer-social-links > *{
+    margin-bottom: 0.5em
+}
+
+.social-links > *{
+    margin: 0 1em 0 0;
+}
+ 
 
 
 
@@ -831,13 +884,23 @@ button:hover{
     
 /*********  hero  *********/    
     
-.hero{
+/*.hero{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-gap: 3em;
+    background-color: var(--clr-primary);
+    
+}*/
+    
+.hero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--clr-primary);
     
 }
@@ -988,6 +1051,16 @@ button:hover{
         grid-gap: 1em
     }
     
+    
+    /************* Footer *************/
+    
+    .footer-navigation-wraper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        justify-items: center;
+        grid-gap: 2em
+    }
+    
 
 }
 
@@ -1012,7 +1085,6 @@ button:hover{
 
     }
     
-    /*** footer ****/
     
    
 }
@@ -1023,12 +1095,15 @@ button:hover{
 .about-me{
     display: flex;
     flex-direction: column;
-    grid-gap: 2em;
     width: 90%;
     margin: 0 auto;
     background-color: var(--clr-dark-gray);
-    padding: 5em 0.3em;
+    padding: 5em 0.3em 2em 0.3em;
     align-items: center;
+}
+
+.about-me > *{
+    margin: 0px 0 30 0px;
 }
 
 .about-me-title{
@@ -1060,8 +1135,11 @@ button:hover{
 .links{
     display: flex;
     flex-direction: column;
-    grid-gap: 1em;
     font-size: calc(1.2rem + 0.2vw)
+}
+
+.links > *{
+    margin-bottom: 20px;
 }
 
 
