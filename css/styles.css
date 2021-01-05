@@ -26,6 +26,7 @@ html{
 
 img{
     width: 100%;
+    height: auto
 }
 
 body{
@@ -248,6 +249,14 @@ button:hover{
 
 }
 
+
+
+/**** logo *****/
+
+.logo-img{
+    width: 80px;
+}
+
 /*************   HOME/BLOGPOSTS ***************/
 
 .home{
@@ -302,10 +311,14 @@ button:hover{
 
 .post-list{
     display: flex;
-    grid-gap: 2em;
     flex-direction: column;
    /* box-shadow: var(--box-shadow)*/
 }
+
+.post-list > li{
+    
+}
+
 
 .post-img{
     width: 100%;
@@ -343,7 +356,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     background-color: var(--clr-primary);
-    padding: 5em 1.2em;
+    padding: 4em 1.2em;
     padding-bottom: 3em;
     justify-content: flex-start;
 }
@@ -712,7 +725,10 @@ button:hover{
 
 .pagination{
     display: flex;
-    grid-gap: 1em
+}
+
+.pagination >* {
+    margin: 0 1em 0 0;
 }
 
 .previous{
@@ -934,7 +950,7 @@ button:hover{
     /***** Services Section *******/
     
     .services{
-            padding: 3em 0em;
+            padding: 1.5em 0em;
             padding-top: 4em
     }
     
@@ -953,7 +969,7 @@ button:hover{
     /***** methodology section *******/
     
     .methodology{
-        padding: 5em 0em;
+        padding: 2em 0em;
     }
     
     .methodology-title-wraper{
@@ -1031,7 +1047,6 @@ button:hover{
     .post-list>li{
         flex-direction: row;
         align-items: center;
-        grid-gap: 2em;
     }
     
     .post-img{
@@ -1129,7 +1144,10 @@ button:hover{
 .flex{
     display: flex;
     align-items: center;
-    grid-gap: 1em; 
+}
+
+.flex > *{
+    margin-right: 20px;
 }
 
 .links{

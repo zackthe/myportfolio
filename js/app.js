@@ -22,7 +22,7 @@ let copytext = document.querySelector('.alert-msg');
 function copyToClipboard() {
     var dummy = document.createElement("input");
     document.body.appendChild(dummy);
-    dummy.setAttribute('value', 'belkasmizakariae@gmail.com');
+    dummy.setAttribute('value', 'contact@belkasmizakariae.com');
     dummy.select();
     document.execCommand('copy');
     document.body.removeChild(dummy);}
