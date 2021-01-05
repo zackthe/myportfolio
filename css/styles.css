@@ -261,12 +261,17 @@ button:hover{
 
 .home{
     padding: 6em 0em;
+    padding-bottom: 2em;
     display: flex;
     flex-direction: column;
-    grid-gap: 4em;
+    /*grid-gap: 4em;*/
     width: 90%;
     margin: 0 auto;
     align-items: center;
+}
+
+.home > *{
+    margin-bottom: 50px;
 }
 
 .page-heading{
@@ -339,13 +344,13 @@ button:hover{
 .post{
     max-width: 900px;
     padding: 5em 0em;
-    width: 80%;
+    width: 88%;
     margin: 0 auto;
     line-height: 1.5em
 }
 
 .post-content{
-    font-size: calc(1.2rem + 0.2vw)
+    font-size: calc(1.4rem + 0.2vw)
 }
 
 
@@ -498,7 +503,7 @@ button:hover{
     grid-gap: 0.5em;
     background-color: var(--clr-dark-gray2);
     text-align: center;
-    padding: 2.5em 2em;
+    padding: 2em 2em;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     transition: all 0.5s ease-in-out;
@@ -512,10 +517,12 @@ button:hover{
 .service-card-title{
     font-size: calc(1.8rem + 0.1vw);
     color: var(--clr-blue);
+    margin-bottom: 0;
 }
 
 .service-card-paragraph{
     font-size: calc(1.2rem + 0.1vw);
+    margin-bottom: 0;
 }
 
 
@@ -565,7 +572,7 @@ button:hover{
         width: 70px;
         height:190px; 
         transform: rotate(97deg);
-        top: 23em;
+        top: 25em;
         left: -2.8em; 
     }
 
@@ -622,11 +629,12 @@ button:hover{
 .methodology-card-title{
     color: var(--clr-rose2);
     font-size: calc(2rem + 0.1vw);
-
+    margin-bottom: 0;
 }
 
 .methodology-card-paragraph{
  font-size: calc(1.2rem + 0.1vw);
+    margin-bottom: 0;
 }
 
 
@@ -680,8 +688,8 @@ button:hover{
 
 .blog-section{
     background-color: var(--clr-dark-gray);
-    padding: 2em;
-    width: 90%;
+    /*padding: 1em;*/
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -725,10 +733,12 @@ button:hover{
 
 .pagination{
     display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 .pagination >* {
-    margin: 0 1em 0 0;
+    margin-right: 0.7em;
 }
 
 .previous{
@@ -774,11 +784,11 @@ button:hover{
 }
 
 .footer-title-wraper > *{
-    margin: 30px 0 0 0px;}
+    margin: 20px 0 0 0px;}
 
 .footer-btn{
     background-color: var(--clr-rose2);
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.2rem + 1vw);
 
 }
 
@@ -983,8 +993,9 @@ button:hover{
 
     }
     
+    
     .methodology-card{
-        padding: 2em 2em;
+        padding: 2.5em 2.5em;
 
     }
     
@@ -1040,7 +1051,7 @@ button:hover{
     /***** HOME / BLOGPOST *****/
     
     .home{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     
@@ -1057,13 +1068,17 @@ button:hover{
     }
     
     .post-list{
-        margin-right: 5em
+        margin-right: 4em
     }
     
     .post-title-wrapper{
         display: flex;
         flex-flow: column;
-        grid-gap: 1em
+       /* grid-gap: 1em*/
+    }
+    
+    .post-title-wrapper > *{
+        margin-bottom: 0.5em
     }
     
     
@@ -1094,7 +1109,7 @@ button:hover{
     .arrow2{
         position: absolute;
         width: 110px;
-        top: 9em;
+        top: 11em;
         transform: rotate(10deg);
         left: 40em;
 
@@ -1161,6 +1176,9 @@ button:hover{
 }
 
 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, figure, .highlight {
+    margin-bottom: 20px;
+}
 
 /** Reset some basic elements */
 /*body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
@@ -1216,12 +1234,12 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-/*.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 
 @media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
-/*.footer-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
+/.footer-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
 
 /** Icons */
 /*.svg-icon { width: 16px; height: 16px; display: inline-block; fill: #828282; padding-right: 5px; vertical-align: text-top; }
@@ -1297,7 +1315,7 @@ table td { border: 1px solid #e8e8e8; }*/
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
+.post-title { font-size: 48px; letter-spacing: -1px; line-height: 1; }
 
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
 
