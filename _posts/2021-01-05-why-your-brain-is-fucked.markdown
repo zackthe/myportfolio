@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "why you're brain is fuc*ed!"
-img: "/pics/dopamine2.jpg"
+img: "https://images.pexels.com/photos/4048182/pexels-photo-4048182.jpeg?cs=srgb&dl=pexels-niko-twisty-4048182.jpg&fm=jpg"
 author: 'belkasmi zakariae'
 ---
 
-![Image](/pics/dopamine2.jpg)
+![Image](https://images.pexels.com/photos/4048182/pexels-photo-4048182.jpeg?cs=srgb&dl=pexels-niko-twisty-4048182.jpg&fm=jpg)
 
 # It's cause and effect !  
-  
+
 Feeling unmotivated? feeling guilty of not doing the thing you said you're going to do, you wanna get started but you cannot find enough motivation? well the first think you gotta know is this is normal, this is the human nature, nothing to blame here, before I wrote this blogpost I was running through the same phases,and let me enlight you `it's cause and effect.`
 
 First let me introduce you to the one and only mister `DOPAMINE`, you should be carefull when dealing with mister `dopamine`, or he'll mess with your life as a whole, so what is dopamine ? dopamine it's the `chemical` (not a hormone) produced in your brain that's responsible for your `motivation`, for example when you see a delicious meal, your brain produces dopamine that makes you take action to go and eat it, in a nutshell dopamine is what motivate you to take `action`.
