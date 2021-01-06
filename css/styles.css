@@ -63,6 +63,7 @@ ul{
 h1,h2,p,a{
     color: white;
 }
+
 p{
     font-weight: 100;
 }
@@ -118,6 +119,13 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+}
+
+.navigation-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -125,7 +133,6 @@ button:hover{
 .navigation-menu-list{
     display: flex;
     flex-direction: column;
-    
 }
 
 
@@ -143,9 +150,7 @@ button:hover{
     display: block;
 }
 
-.navigation-menu-list>li{
-    margin-left: 4em;
-}
+
 
 .logo{
     color: white;
@@ -349,10 +354,15 @@ button:hover{
     line-height: 1.5em
 }
 
-.post-content{
-    font-size: calc(1.4rem + 0.2vw)
+.post-content p{
+    font-size: calc(0.9rem + 0.2vw);
+    font-family: 'Roboto Mono', monospace;
+
 }
 
+.post-content h1{
+    font-size: calc(1.9rem + 0.5vw);
+}
 
 /****************** HERO SECTION *******************/
 
@@ -851,12 +861,14 @@ button:hover{
     
 }
 
-.navigation-menu-list{
-    }
+    
 .navigation-menu-list>li{
     font-size: calc(1rem + 0.2vw);
 }
     
+.navigation-menu-list>li{
+    margin-left: 4em;
+}  
 
 
     
