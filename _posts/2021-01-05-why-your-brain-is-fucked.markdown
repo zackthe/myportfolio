@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "why you're brain is fuc*ed!"
+title:  "why your brain is fuc*ed!"
 img: "https://images.pexels.com/photos/4048182/pexels-photo-4048182.jpeg?cs=srgb&dl=pexels-niko-twisty-4048182.jpg&fm=jpg"
 author: 'belkasmi zakariae'
 ---
