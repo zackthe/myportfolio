@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "why your brain is fuc*ed!"
+title:  "Brain hacks that makes you productive!"
 img: "https://images.pexels.com/photos/4048182/pexels-photo-4048182.jpeg?cs=srgb&dl=pexels-niko-twisty-4048182.jpg&fm=jpg"
 author: 'belkasmi zakariae'
 ---

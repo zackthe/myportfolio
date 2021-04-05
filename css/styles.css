@@ -15,6 +15,7 @@
     --clr-dark-blue : #222831;
     
     --ff-text :'VT323', monospace;
+  /* --ff-text :'JetBrainsMono', monospace;*/
      --box-shadow : 0 15px 30px 0 rgba(0.15,0.15,0.15,0.20);  
 }
 
@@ -22,7 +23,9 @@ html{
     font-size: 100%;
     font-family: var(--ff-text);
     font-weight: 100;
+    scroll-behavior: smooth
 }
+
 
 img{
     width: 100%;
@@ -101,6 +104,10 @@ button:hover{
         margin: 0 auto;
         width: 80%;
     }
+
+.wrapper{
+    padding: 6em 0;
+}
 
 /**** mobile first approach ******/
 
@@ -471,6 +478,90 @@ button:hover{
     grid-gap: 1em
 }*/
 
+
+
+/******************* skills SECTION ********************/
+
+.skills{
+    padding-top: 6em;
+    padding-bottom: 1em;
+}
+
+.skills__title{
+    font-size: calc(3rem + 1.5vw);
+    text-align: center;
+    margin-bottom: 4rem
+}
+
+.skills__card-wrapper > *{
+    margin-bottom: 25px;
+}
+
+/*.skills__card{
+    min-width: 200px;
+    margin-left: 20px;
+}*/
+
+
+.skills_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_icon{
+    width: 150px;
+    height: 150px
+}
+
+        .skills__card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    justify-items: center;
+    grid-gap: 1em
+}
+
+@media only screen and (min-width : 615px){
+        .skills__card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    justify-items: center;
+    grid-gap: 1em
+}
+  
+}
+
+
+.skills__card p{
+    font-size: calc(1.5rem + 0.5vw);
+    
+}
+
+/*.skills__card > p::before{
+
+  content: "\2022";  
+  color: white; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em;
+    
+}  */  
+
+.skills_icon{
+    filter: invert(100%) sepia(0%) saturate(7443%) hue-rotate(198deg) brightness(126%) contrast(112%);
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+
+}
+
+.skills_paragraph{
+    margin: 0 auto;
+}
+
+
 /******************* SERVICES SECTION ********************/
 
 
@@ -676,23 +767,45 @@ button:hover{
 
 }
 
-.project-card{
-    
-    transition: all 0.5s ease-in-out
-    
+
+.project__story{
+    font-size: calc(0.9rem + 0.2vw);
+    font-family: 'Roboto Mono', monospace;
+
 }
 
-.project-card:hover{
-    transform: scale(1.05)
+
+
+@media only screen and (min-width : 768px){
+    
+.project__img{
+    height: 300px;
+    object-fit: fill;
+    
 }
+}
+
 
 .project-card-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0em
+    align-content: center;
+    padding: 0.8rem 0em
 }
 
+.project_details{
+    text-decoration: underline;
+    font-size:22px
+}
+
+.project-title{
+   margin-bottom: 0px 
+}
+
+.project-paragraph{
+    margin-bottom: 0px 
+}
 
 /******************** BLOG SECTION ****************/
 
@@ -829,10 +942,6 @@ button:hover{
     margin: 0 1em 0 0;
 }
  
-
-
-
-
 
 
 /*************************** MEDIA QUERIES ***************************/
@@ -1132,7 +1241,7 @@ button:hover{
 }
 
 
-/*************  A B O U T   M E  SECTION***************/
+/*************  A B O U T   M E  SECTION ***************/
 
 .about-me{
     display: flex;
